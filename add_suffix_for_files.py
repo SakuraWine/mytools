@@ -17,7 +17,7 @@ if not os.path.exists(target_directory_path):
     print("target directory not found.")
     exit()
 # execute
-files = glob.glob(target_directory_path + "*")
+files = glob.glob(target_directory_path + "*.*")
 for file in files:
     splitted_filename = os.path.splitext(file.replace(target_directory_path, ""))
     filename = splitted_filename[0] + suffix + splitted_filename[1]
