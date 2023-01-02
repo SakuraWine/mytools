@@ -15,7 +15,7 @@ if target_directory_path[-1] != "/":
     target_directory_path = target_directory_path + "/"
 if not os.path.exists(target_directory_path):
     print("target directory not found.")
-    exit(-1)
+    exit()
 # execute
 files = glob.glob(target_directory_path + "*")
 for file in files:
